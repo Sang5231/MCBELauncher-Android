@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.SettingsFragment"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/creeper"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_selected_version"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="MCBE Launcher V1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="8"/>
+        </LinearLayout>
+    </Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose APK Source:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@color/material_dynamic_primary10"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_group_source">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_mcpedl"
+                        android:text="mcpedl.org"
+                        android:textColor="@color/white"
+                        android:background="@color/material_dynamic_primary10"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_mcpeplanet"
+                        android:text="mcpe-planet.com"
+                        android:background="@color/material_dynamic_primary10"
+                        android:textColor="@color/white"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_manage_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mange version"
+                    android:layout_margin="0dp"
+                    android:textSize="16sp"
+                    style="@style/PrimaryColor"
+                    android:textAlignment="textStart"/>
+                <Button
+                    android:id="@+id/btn_manage_launcher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mange launcher"
+                    android:layout_margin="0dp"
+                    android:textSize="16sp"
+                    style="@style/PrimaryColor"
+                    android:textAlignment="textStart"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@color/material_dynamic_primary10"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <Switch
+                        android:id="@+id/sw_edit_ver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Edit version list (experience)"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:background="@color/material_dynamic_primary10"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="This feature was created to allow for quick updates to the latest version without being restricted by the limited knowledge of this launcher's developers."
+                        android:textSize="13sp"
+                        android:textColor="@color/white"
+                        android:background="@color/material_dynamic_primary10"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="7dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Choose APK installation mode:"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"
+                        android:background="@color/material_dynamic_primary10"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_group_mode">
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_uninstall"
+                            android:text="Uninstall (recommended)"
+                            android:textColor="@color/white"
+                            android:background="@color/material_dynamic_primary10"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="The app automatically detects APK files on your device and uninstalls them (if already installed)."
+                            android:textSize="13sp"
+                            android:textColor="@color/white"
+                            android:background="@color/material_dynamic_primary10"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_override"
+                            android:text="Override"
+                            android:background="@color/material_dynamic_primary10"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Install and overwrite the existing applications on your device."
+                            android:textSize="13sp"
+                            android:textColor="@color/white"
+                            android:background="@color/material_dynamic_primary10"/>
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rb_manually"
+                            android:text="Manually"
+                            android:background="@color/material_dynamic_primary10"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="5dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="My phone! I want to uninstall it myself."
+                            android:textSize="13sp"
+                            android:textColor="@color/white"
+                            android:background="@color/material_dynamic_primary10"/>
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background"
+    tools:context=".activity.ManageVersionActivity">
+
+    <!-- Header -->
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Manage versions"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </Toolbar>
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow_left"
+            android:layout_weight="2"/>
+        <RadioGroup
+            android:id="@+id/radio_group_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="6">
+            <RadioButton
+                android:layout_height="wrap_content" android:layout_width="wrap_content"
+                android:id="@+id/rb_manage_release" android:text="Release"/>
+            <RadioButton
+                android:layout_height="wrap_content" android:layout_width="wrap_content"
+                android:id="@+id/rb_manage_beta_preview" android:text="Beta/Preview"/>
+            <RadioButton
+                android:layout_height="wrap_content" android:layout_width="wrap_content"
+                android:id="@+id/rb_manage_alpha" android:text="Alpha"/>
+        </RadioGroup>
+        <ImageView
+            android:id="@+id/btn_delete_all"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_weight="2"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_current_state"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No version has been downloaded yet!"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp" />
+
+</LinearLayout>

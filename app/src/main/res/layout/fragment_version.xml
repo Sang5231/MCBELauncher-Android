@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Bộ lọc -->
+    <RadioGroup
+        android:id="@+id/radio_group_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <RadioButton
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:id="@+id/rb_all" android:text="All" android:checked="true"/>
+        <RadioButton
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:id="@+id/rb_release" android:text="Release"/>
+        <RadioButton
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:id="@+id/rb_preview" android:text="Preview"/>
+        <RadioButton
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:id="@+id/rb_beta" android:text="Beta"/>
+        <RadioButton
+            android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:id="@+id/rb_alpha" android:text="Alpha"/>
+    </RadioGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_versions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@color/cardview_dark_background" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <network-security-config>
+        <base-config cleartextTrafficPermitted="true">
+            <trust-anchors>
+                <certificates src="system" />
+            </trust-anchors>
+        </base-config>
+
+        <domain-config cleartextTrafficPermitted="true">
+            <domain includeSubdomains="true">minecraft.wiki</domain>
+            <domain includeSubdomains="true">mcpedl.org</domain>
+            <domain includeSubdomains="true">mcpe-planet.com</domain>
+        </domain-config>
+    </network-security-config>
+</PreferenceScreen>

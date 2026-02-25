@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@drawable/rounded_green_bg"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:weightSum="10">
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/grass_block"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_current_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Version: "
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_weight="8"/>
+
+        <ImageView
+            android:id="@+id/btn_new_version"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/PrimaryColor"
+            android:text="PLAY"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_green_bg"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="0dp" />
+    </LinearLayout>
+</LinearLayout>

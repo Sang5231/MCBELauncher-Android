@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddVersionActivity"
+    android:orientation="vertical"
+    android:background="@color/cardview_dark_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="7dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose version" android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="7dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Release"
+            android:id="@+id/btn_release"
+            android:layout_margin="0dp"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            style="@style/PrimaryColor" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Beta/Preview"
+            android:layout_margin="0dp"
+            android:textSize="16sp"
+            android:id="@+id/btn_beta_preview"
+            android:textAlignment="textStart"
+            style="@style/PrimaryColor" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alpha"
+            android:id="@+id/btn_alpha"
+            android:layout_margin="0dp"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            style="@style/PrimaryColor" />
+        <TextView
+            android:id="@+id/tvSelected"
+            android:background="@drawable/border_top_bottom"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:text="Selected: " android:textSize="18sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="15dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:textAlignment="textStart"
+            style="@style/SecondColor"
+            android:layout_marginRight="7dp"
+            android:id="@+id/btn_cancel"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textSize="16sp"
+            style="@style/SecondColor"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/btn_ok"/>
+    </LinearLayout>
+</LinearLayout>

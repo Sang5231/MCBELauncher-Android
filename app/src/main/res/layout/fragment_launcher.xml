@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.LauncherFragment"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_dark">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/creeper"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_selected_version"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="MCBE Launcher V1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="8"/>
+        </LinearLayout>
+    </Toolbar>
+    <!-- Phần dưới: 30% màn hình - 3 nút chức năng + nút PLAY -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/cardview_dark_background">
+
+        <Button
+            android:id="@+id/btn_wiki"
+            style="@style/PrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wiki"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_allow_external"
+            style="@style/PrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow External Storage"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_edit_options"
+            style="@style/PrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Player Name (options.txt)"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/open_mc"
+            style="@style/PrimaryColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Open Minecraft"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_edit_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/PrimaryColor"
+            android:text="Idk"
+            android:textSize="16sp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/play_button_container">
+
+        <!-- Nút PLAY lớn giống ảnh 2 -->
+        <include layout="@layout/include_play_button"/>
+    </LinearLayout>
+
+</LinearLayout>

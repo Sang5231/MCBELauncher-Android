@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">MCBE Launcher</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Basic strings -->
+    <string name="launching_minecraft">Launching Minecraft…</string>
+    <string name="cannot_launch_minecraft">Cannot launch Minecraft</string>
+    <string name="error_launching">Error: </string>
+    <string name="apk_not_found">APK not found for version: </string>
+    <string name="installing_apk">Opening installer…</string>
+    <string name="no_app_to_install">No installer found</string>
+    <string name="install_error">Install error: </string>
+
+    <!-- Play button strings -->
+    <string name="play_button_install">INSTALL</string>
+    <string name="play_button_launch">LAUNCH</string>
+    <string name="play_button_update">UPDATE</string>
+    <string name="play_button_select">SELECT VERSION</string>
+    <string name="play_button_download">DOWNLOAD</string>
+    <string name="version_not_downloaded">Version not downloaded</string>
+    <string name="checking_version">Checking version…</string>
+    <string name="please_select_version_first">Please select a version first</string>
+
+    <!-- System check -->
+    <string name="checking_system">Checking system for version: </string>
+
+    <!-- Version mismatch dialog -->
+    <string name="version_mismatch_title">Version Mismatch</string>
+    <string name="version_mismatch_notice">⚠️ Detected Minecraft version %s\n\nInstall version %s?\n\nUninstall current version in Settings → Apps first.</string>
+    <string name="install_anyway">Install</string>
+    <string name="cancel">Cancel</string>
+    <string name="open_current_version">Launch Current</string>
+
+    <!-- Download required dialog -->
+    <string name="download_required">Download Required</string>
+    <string name="version_not_downloaded_detailed">Version %s not downloaded. Download now?</string>
+    <string name="download_now">Download Now</string>
+
+    <!-- Corrupted APK dialog -->
+    <string name="apk_corrupted">APK Corrupted</string>
+    <string name="apk_corrupted_message">APK for version %s is corrupted or incomplete. Redownload?</string>
+    <string name="redownload">Redownload</string>
+
+    <!-- General -->
+    <string name="minecraft_not_found">Minecraft not found on device</string>
+    <string name="install_new_version">Install new version</string>
+    <string name="launch_current_version">Launch current version</string>
+
+    <!-- Status display -->
+    <string name="status_apk_downloaded">APK: Downloaded ✓</string>
+    <string name="status_apk_not_downloaded">APK: Not downloaded</string>
+    <string name="status_apk_corrupted">APK: Corrupted ✗</string>
+    <string name="status_minecraft_installed">Installed: %s</string>
+    <string name="status_minecraft_not_installed">Minecraft not installed</string>
+    <string name="status_versions_match">Versions match ✓</string>
+    <string name="status_versions_mismatch">Versions differ ✗</string>
+    <string name="status_version_not_selected">No version selected</string>
+
+    <!-- Toast messages -->
+    <string name="toast_opening_installer">Opening installer…</string>
+    <string name="toast_no_installer_found">No installer found</string>
+    <string name="toast_file_not_found">APK file not found</string>
+    <string name="toast_file_corrupted">APK file corrupted</string>
+    <string name="toast_installation_complete">Installation complete</string>
+    <string name="toast_launching_minecraft">Launching Minecraft…</string>
+    <string name="toast_storage_granted">Storage permission granted!</string>
+</resources>

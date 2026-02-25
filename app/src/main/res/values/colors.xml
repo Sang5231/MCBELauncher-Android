@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background_dark">#0F0F23</color>
+    <color name="toolbar_background">#1A1A2E</color>
+    <color name="content_background">#16213E</color>
+    <color name="button_color">#0F3460</color>
+    <color name="green_button">#4CAF50</color>
+    <color name="red_button">#F44336</color>
+    <color name="card_dark">#424242FF</color>
+
+    <!-- Fix missing material dynamic colors -->
+    <color name="material_dynamic_primary0">#000000</color>
+    <color name="material_dynamic_primary10">#001F3F</color>
+    <color name="material_dynamic_primary20">#003366</color>
+    <color name="material_dynamic_primary30">#004C99</color>
+    <color name="material_dynamic_primary40">#0066CC</color>
+
+    <color name="material_dynamic_secondary0">#000000</color>
+    <color name="material_dynamic_tertiary0">#000000</color>
+
+    <!-- Legacy material colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

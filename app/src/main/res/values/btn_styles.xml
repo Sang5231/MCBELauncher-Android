@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Thêm vào btn_styles.xml -->
+    <style name="PrimaryColor" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/pri_btn_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="SecondColor" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/sec_btn_color</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Tạo color selector -->
+    <color name="pri_btn_color">#152260</color>
+    <color name="sec_btn_color">#475D92FF</color>
+</resources>

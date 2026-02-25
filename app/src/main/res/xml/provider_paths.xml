@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Chia sẻ file trong external-files-dir / Downloads -->
+    <external-files-path
+        name="downloads"
+        path="Downloads/" />
+
+    <!-- Hoặc nếu bạn lưu ở getExternalStoragePublicDirectory(DIRECTORY_DOWNLOADS) -->
+    <external-path
+        name="external_downloads"
+        path="Download/" />   <!-- chú ý: Android 11+ hạn chế, ưu tiên external-files-path -->
+
+    <!-- Nếu lưu trong cache hoặc files của app -->
+    <cache-path name="cache" path="." />
+    <files-path name="files" path="." />
+
+</paths>
